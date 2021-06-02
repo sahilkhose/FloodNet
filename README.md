@@ -1,2 +1,2 @@
 # FloodNet
-Official implementation of https://arxiv.org/abs/2012.02951 paper
+Official implementation of https://arxiv.org/abs/2105.08655 paper
