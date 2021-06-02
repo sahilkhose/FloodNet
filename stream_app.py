@@ -1,15 +1,12 @@
 import streamlit as st
 import os
 from PIL import Image
-import cv2
 import random 
 import numpy as np
 
 @st.cache(ttl=3600, max_entries=10)
 def image_out(image):
     return Image.open(image)
-
-
 
 def stream_run():
     st.title("FloodNet Semantic Segmentation")
@@ -27,15 +24,13 @@ def stream_run():
     - Read more about it in our [paper](https://arxiv.org/abs/2105.08655)
     ''')
     
-    st.sidebar.markdown('''Liked it? Give a :star:  on GitHub [here](https://github.com/sahilkhose/Neural_Machine_Translation)''')
+    st.sidebar.markdown('''Liked it? Give a :star:  on GitHub [here](https://github.com/sahilkhose/FloodNet)''')
 
     image = "15_4.png"
     if st.button("Generate"):  
         image_no = random.randint(0, len(os.listdir('plt_inference')))
         image = f"plt_inference/{image_no}.png"
     st.image(np.array(image_out(image))[:-30, 100:-80, :], use_column_width=True)  
-    
-        
 
 if __name__ == "__main__":
     st.set_page_config(
