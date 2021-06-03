@@ -15,7 +15,7 @@ def stream_run():
     st.sidebar.markdown('''
         # Labels
         ''')
-    st.sidebar.image(image_out("LBL.png"))
+    st.sidebar.image(image_out("demo_data/LBL.png"))
     st.sidebar.markdown('''
     # What is this project?
     - [FloodNet](https://arxiv.org/abs/2012.02951) is a high-resolution image dataset acquired by DJI Mavic Pro quadcopters, after Hurricane Harvey.
@@ -26,10 +26,10 @@ def stream_run():
     
     st.sidebar.markdown('''Liked it? Give a :star:  on GitHub [here](https://github.com/sahilkhose/FloodNet)''')
 
-    image = "15_4.png"
+    image = "demo_data/15_4.png"
     if st.button("Generate"):  
-        image_no = random.randint(0, len(os.listdir('plt_inference')))
-        image = f"plt_inference/{image_no}.png"
+        image_no = random.randint(0, len(os.listdir('demo_data/plt_inference')))
+        image = f"demo_data/plt_inference/{image_no}.png"
     st.image(np.array(image_out(image))[:-30, 100:-80, :], use_column_width=True)  
 
 if __name__ == "__main__":
