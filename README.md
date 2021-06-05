@@ -1,4 +1,6 @@
+<div align="center">
 # Semi-Supervised Classification and Segmentation on High Resolution Aerial Images
+</div>
 ##### [Sahil Khose](https://github.com/sahilkhose), [Abhiraj Tiwari](www.github.com/abhirajtiwari), [Ankita Ghosh](https://github.com/ankitaghosh9)
 ---
 Official implementation of https://arxiv.org/abs/2105.08655 paper.
