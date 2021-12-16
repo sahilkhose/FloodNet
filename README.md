@@ -7,7 +7,7 @@
 --------------------------------------------------------------------------------------------
 
 Official implementation of https://arxiv.org/abs/2105.08655 paper. <br>
-This paper was submitted in Earthvision 2021 workshop (CVPR 2021) under Floodnet[<sup>[1]</sup>](#floodnet-cite) task. <br>
+This paper was submitted in Earthvision 2021 workshop (CVPR 2021) under Floodnet[<sup>[1]</sup>](#floodnet-cite) task. <br><br>
 :partying_face: Update: This paper was accepted at the **Tackling Climate Change with ML workshop** at **NeurIPS 2021**. <br>
 
 ## Checkout our model predictions!
